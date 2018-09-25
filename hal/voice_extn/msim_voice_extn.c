@@ -80,6 +80,7 @@ int msim_voice_extn_set_parameters(struct audio_device *adev __unused,
                                   struct str_parms *parms)
 {
     int ret;
+
     char value[32] = {0};
 
     ret = str_parms_get_str(parms, AUDIO_PARAMETER_KEY_PHONETYPE, value,
